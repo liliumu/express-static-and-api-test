@@ -2,7 +2,7 @@
 Usage
 
 ```
-node serve.js
+node httpserver.js
 ```
 
 Directory structure
