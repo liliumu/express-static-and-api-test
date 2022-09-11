@@ -10,10 +10,14 @@
     <p>hello</p>
     <script>
       fetch("./me.json")
-        .then((res) => res.json())
-        .then((json) => console.log(json))
+        .then((res) => {
+          return res.text();
+        })
+        .then((text) => {
+          console.log(text);
+        })
         .catch((err) => {
-          console.err("通信に失敗しました", err);
+          console.log("通信に失敗しました", err);
         });
     </script>
   </body>
