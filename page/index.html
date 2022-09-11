@@ -9,9 +9,9 @@
   <body>
     <p>hello</p>
     <script>
-      fetch("./me.json").then((res) => {
-        res.json().then((s) => console.log(s));
-      });
+      fetch("./me.json")
+        .then((r) => r.json())
+        .then((s) => console.log(s));
     </script>
   </body>
 </html>
